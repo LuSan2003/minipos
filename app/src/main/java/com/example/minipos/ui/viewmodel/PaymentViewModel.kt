@@ -24,7 +24,7 @@ class PaymentViewModel(private val repository: TransactionRepository) : ViewMode
         viewModelScope.launch {
             _paymentState.value = PaymentState.Loading
             try {
-                // Simulate processing time
+
                 // delay(1000) 
 
                 val cardNumber = generateRandomCardNumber()

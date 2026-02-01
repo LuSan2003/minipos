@@ -8,5 +8,5 @@ data class Transaction(
     @PrimaryKey(autoGenerate = true) val id: Int = 0,
     val amount: Double,
     val cardNumber: String,
-    val date: Long // Storing date as timestamp
+    val date: Long 
 )

@@ -24,12 +24,6 @@ class MainActivity : ComponentActivity() {
         setContent {
             MiniposTheme {
                 Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
-                    // Passing modifier with padding to AppNavigation isn't strictly necessary 
-                    // if screens handle it, but good practice to respect edge-to-edge.
-                    // However, our AppNavigation doesn't take modifier. 
-                    // Let's wrap it in a Box or adjust AppNavigation. 
-                    // For simplicity, we'll just ignore the padding here or pass it if extended.
-                    // Actually, let's just use a Box padding.
                     androidx.compose.foundation.layout.Box(modifier = Modifier.padding(innerPadding)) {
                         AppNavigation(repository = repository)
                     }
